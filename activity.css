@@ -1,0 +1,96 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  text-decoration: none;
+  list-style: none;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 35px 12%;
+  background: rgba(0, 0, 0, 0.8);
+  backdrop-filter: blur(10px);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+  
+}
+
+.logo {
+  font-size: 20px;
+  color: white;
+  font-weight: 600;
+  transition: 0.35s;
+}
+
+.logo:hover {
+  color: orangered;
+  text-shadow: 0 0 25px orangered, 0 0 50px orangered;
+  transform: scale(1.1);
+}
+
+span {
+  color: orangered;
+}
+/* Navbar styling */
+.navbar a {
+  color: green; /* Change to your desired color (e.g., #000000 for black) */
+  text-decoration: none; /* Optional: Remove underline */
+}
+
+.navbar a:hover {
+  color: orangered; /* Change to your desired color on hover */
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 120vh;
+  background: linear-gradient(to right, black 50%, white 50%);
+  color: aliceblue;
+  padding-top: 100px;
+}
+
+.card-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.card {
+  background: gray;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px blue;
+  overflow: hidden;
+  transition: transform 0.3s, box-shadow 0.35s;
+  width: 300px;
+}
+
+.card img {
+  width: 100%;
+  height: 63%;
+}
+
+.card h3 {
+  padding: 15px;
+  font-size: 1.5em;
+}
+
+.card p {
+  padding: 0 15px 15px;
+  color: goldenrodray;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px blue;
+}
